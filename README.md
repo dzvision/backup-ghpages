@@ -4,7 +4,7 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://dzvision.github.io/)**
+**[在线预览 &rarr;](https://dzvision.github.io/blog)**
 
 ## 致谢
 
