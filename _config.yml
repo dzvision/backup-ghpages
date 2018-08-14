@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://dzvision.github.io
+url: https://dzvision.github.io/blog
 date_format: "ordinal"
 title: 繁華是客
 subtitle: "薄雾中的忧郁"
