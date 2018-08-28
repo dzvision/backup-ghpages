@@ -89,13 +89,24 @@ vi,vim, nano都可以
 输入/usr/bin/kms并回车
 按:wq保存退出即可  
 
-### 在Windows环境使用
-vlmcsd-Windows-x86.exe 是KMS Server模拟软件  （或x64）
+### 在Windows环境使用vlmcsd
+vlmcsd-Windows-x86.exe 是KMS Server模拟软件  （或x64）  
 vlmcs-Windows-x86.exe 是测试KMS Server是否能正常连接和使用。后面参数带上IP地址，就是检测该KMS是否正常。
 
 我们通过记录本机ip (ipconfig)  
 使用cmd打开vlmcsd-Windows-x86.exe即可。
 测试本地KMS是否运行，然后即可在局域网内，激活其他电脑。
+
+因为我们关闭程序后，就停止运行了。所以我们也可以在本地电脑添加自启动服务项。  
+```
+sc create KMSserver binPath= C:\Allthings\Tools\kms-server.exe start= auto
+[SC] CreateService 成功
+```
+因为忘了修改显示名称，所以再写
+```
+sc config KMSserver displayName= KMS-Mi-Server
+```
+这样在服务项里面就可以找到啦。
 
 
 
