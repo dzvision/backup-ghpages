@@ -87,16 +87,26 @@ vi /etc/rc.local
 vi,vim, nano都可以
 
 输入/usr/bin/kms并回车
-按:wq保存退出即可
+按:wq保存退出即可  
+
+### 在Windows环境使用
+vlmcsd-Windows-x86.exe 是KMS Server模拟软件  （或x64）
+vlmcs-Windows-x86.exe 是测试KMS Server是否能正常连接和使用。后面参数带上IP地址，就是检测该KMS是否正常。
+
+我们通过记录本机ip (ipconfig)  
+使用cmd打开vlmcsd-Windows-x86.exe即可。
+测试本地KMS是否运行，然后即可在局域网内，激活其他电脑。
+
+
 
 ### Windows激活
-slmgr.vbs -upk 卸载现有Key
+slmgr.vbs -upk 卸载现有Key  
 ver | find "10.0.">nul && slmgr.vbs -ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
-输入新Key (Win 10 Ent的GLVK)
-slmgr.vbs -skms 34.219.129.62
-slmgr.vbs -ato
-
-激活完成。
+输入新Key (Win 10 Ent的GLVK)  
+slmgr.vbs -skms 34.219.129.62  
+slmgr.vbs -ato  
+激活完成。  
+可通过slmgr.vbs -dlv查询激活状态。  
 
 
 ### 激活Office
@@ -116,5 +126,5 @@ cscript ospp.vbs /dstatus
 激活完成。
 
 ### 参考文献
-1. https://imeiji.github.io/2018/02/08/%E5%88%A9%E7%94%A8vlmcsd%E6%90%AD%E5%BB%BAKMS%E6%BF%80%E6%B4%BB%E6%9C%8D%E5%8A%A1%E5%99%A8/
-2. https://wwww.lvmoo.com/517.love
+1. [imeiji GitHub](https://imeiji.github.io/2018/02/08/%E5%88%A9%E7%94%A8vlmcsd%E6%90%AD%E5%BB%BAKMS%E6%BF%80%E6%B4%BB%E6%9C%8D%E5%8A%A1%E5%99%A8/)  
+2. [lvmoo](https://wwww.lvmoo.com/517.love)
