@@ -105,7 +105,7 @@ gitalk:
     owner: dzvision
     repo: dzvision.github.io
     clientID: 2b4bb3bc09ee9603883f
-    clientSecret: cbf98fdaebe47422ddc668fbf4b4823016cd95d8
+    clientSecret: bbe57ca8c46c1300dd84a2dd1cdc29d30458854b
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 

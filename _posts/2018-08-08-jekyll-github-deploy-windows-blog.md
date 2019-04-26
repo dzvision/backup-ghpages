@@ -27,9 +27,24 @@ Jekyll on Windows: https://rubyinstaller.org/
 然后我们安装Ruby+Devkit,安装完成后，会出现cmd提醒你安装1,2,3
 我们选择3，安装全部组件。(Mingw)
 
-打开Windows开始菜单，并找到Start Command Prompt with Ruby，打开使用Ruby。
+打开Windows开始菜单，并找到Start Command Prompt with Ruby，打开使用Ruby。  
 
-我们需要更新Ruby gem
+在打算更新gem之前，建议把gem源更换为中国源。  
+```
+gem sources --remove https://rubygems.org/ 
+gem sources -a https://gems.ruby-china.com/
+```
+或  
+```
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+```
+然后我们查看目前的源：
+```
+gem sources -l
+# 确保只有 gems.ruby-china.com
+```
+
+更新Ruby gem
 ```
 gem update
 ```
@@ -39,7 +54,7 @@ gem update
 gem install jekyll bundler
 ```
 
-通过jekyll -v可以检测是否安装成功。
+通过jekyll -v可以检测是否安装成功。  
 
 
 ### 时间设置
@@ -81,9 +96,28 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 即可。
 
 ## 5. 本地运行网站测试
+新建网站项目
 ```
+jekyll new myblog
+#位置位于C:\Users\ABC\myblog\
+
+//切换到工程目录，并开启服务
+cd myblog
+
 bundle exec jekyll serve
 ```
+因为我们是复制主题到该目录，会出现bundle未安装错误。  
+重新安装一下就可以了，有时候更新也可以。
+
+```
+#安装bundle
+bundle install
+
+#更新bundle
+bundle update --bundler
+```
+
+
 
 ## 6. 修改侧边栏
 把主页中侧边栏的Repo修改成分类栏。
@@ -100,7 +134,7 @@ bundle exec jekyll serve
 ## 小提示
 1. 直接在cmd输入d:更换盘符。输入cd d:\abc\def\更换文件夹  
 2. 如果把文件放到xxx.github.io/blog内，则会出现Github Page不更新。原因是GitHub只会阅读Jekyll中xxx.github.io/_includes,而不会进入blog/_includes
-导致。
+导致。该问题是可以解决的。需要在Github上设置Github Page。
 
 ## 分享图标问题
 问：如何删减分享链接、图标呢？  
