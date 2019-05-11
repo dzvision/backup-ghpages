@@ -25,7 +25,8 @@ Jekyll on Windows: https://rubyinstaller.org/
 
 ### 安装Jekyll
 然后我们安装Ruby+Devkit,安装完成后，会出现cmd提醒你安装1,2,3
-我们选择3，安装全部组件。(Mingw)
+我们选择3，安装全部组件。(Mingw)  
+友情提示：他会不断提示多次，其实只需要安装一次即可。
 
 打开Windows开始菜单，并找到Start Command Prompt with Ruby，打开使用Ruby。  
 
