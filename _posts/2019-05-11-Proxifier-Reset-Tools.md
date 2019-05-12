@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Proxifier Reset Tool
-categories: 随笔
+categories: 其他
 description: 无限重置Proxifier
 keywords: Proxifier
 ---
