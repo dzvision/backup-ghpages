@@ -96,7 +96,38 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ```
 即可。
 
-## 5. 本地运行网站测试
+## 5. 修改_config.yml
+除了要修改基本信息之外，还需要把  
+```
+gems:
+    - jekyll-github-metadata
+    - rouge
+  
+# 修改为:	
+plugins_dir:
+    - jekyll-github-metadata
+    - rouge
+```
+否则会提示：  
+
+> Deprecation: The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.  
+> Deprecation: The 'plugins' configuration option has been renamed to 'plugins_dir'. Please update your config file accordingly.
+
+## 6. 修改open-source文件
+这个文件位于pages\open-source.md  
+这个是因为如果不修改的话，会提示语法错误
+>Liquid Warning: Liquid syntax error (line 2): Expected dotdot but found pipe in ... ...
+  
+只需要把文件中的：
+> sorted_repos = (site.github... ...rs_count')  
+ 
+括号去掉  
+即变成:  
+```
+{... sorted_repos = site.github....stargazers_count'
+```
+
+## 7. 本地运行网站测试
 新建网站项目
 ```
 jekyll new myblog

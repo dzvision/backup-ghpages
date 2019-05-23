@@ -1,14 +1,18 @@
 ---
 layout: page
 title: About
-description: 书写自己的传奇
-keywords: 我是谁
+description: 打码改变世界
+keywords: Zhuang Ma, 马壮
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-听雪，听萧，听雨，却发现原来一直我都是擦肩而过的行人。
+我是马壮，码而生，码而立。
+
+仰慕「优雅编码的艺术」。
+
+坚信熟能生巧，努力改变人生。
 
 ## 联系
 
