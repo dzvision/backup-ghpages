@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SQL 把一个表内字段的值复制到另一个表内的特定字段
+title: SQL 复制表
 categories: SQL
-description: SQL 把一个表内字段的值复制到另一个表内的特定字段
+description: SQL 复制表
 keywords: SQL Server
 ---
 
