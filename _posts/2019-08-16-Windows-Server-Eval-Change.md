@@ -57,3 +57,20 @@ GVLK	WMDGN-G9PQG-XVVXX-R3X43-63DFG
 Retail	G74NR-DYWGM-979TC-8Y79P-XTRB4  
 Retail	YPFKW-TKNDC-YF636-CQTPW-Q7CJF  
 Retail	W6CJW-NTXD6-KQKGC-48CVV-BDYM4  
+
+## 题外话
+使用这种方式修改版本，可能导致激活的时候出现以下问题：
+```
+slmgr -ato
+#############
+在运行Microsoft Windows 非核心版本的计算机上 运行slui.exe
+```
+
+这个情况请不要直接到C:\Windows\System32\spp\store\2.0去查看文件夹权限。
+虽然一部分可能是这个原因导致的。
+
+该问题直接在命令行输入slui.exe，在弹出的激活界面中输入GLVK的密钥即可。  
+
+-------------
+在其他类型出现该问题，是直接到达这个文件夹，并确认sppsvc是否具有全部权限。
+（例如Services Protection无法启用）
