@@ -3,7 +3,7 @@ layout: post
 title: 如何利用Python和wxpy进行群发
 categories: Python
 description: 
-keywords: Python Wechat
+keywords: Python, Wechat
 ---
 
 ## 如何利用Python和wxpy进行群发

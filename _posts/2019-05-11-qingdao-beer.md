@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 青岛啤酒联通每天领流量90M
-categories: python
+categories: Python
 description: 每天领流量
-keywords: 中国联通, python
+keywords: 中国联通, Python
 ---
 
 青岛啤酒活动，联通每天领3次共90M流量
