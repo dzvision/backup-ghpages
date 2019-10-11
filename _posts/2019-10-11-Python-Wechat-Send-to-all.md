@@ -16,6 +16,8 @@ keywords: Python Wechat
 ## 序
 使用Python进行微信网页版模拟早已不是秘密，甚至可以使用鼠标模拟的方式，对PC版进行模拟。  
 [WeTool免费版](https://www.wxb.com/wetool)，能直接查看全部好友是否有人删除了你，并且不会发送信息给朋友，使用这个可能比Python更合适一些。  
+另外[句子秒回](https://wechat.botorange.com/)也是一个不错的工具，他更多聚焦在CRM上面。
+
 下面，我们一起来探究一下如何进行群发。
 
 ## 安装Python
@@ -41,9 +43,9 @@ from wxpy import *
 from time import sleep
 import random
 
-bot = Bot(cache_path= True)
+bot = Bot(cache_path=True)
 #cache_path="D:\PycharmProjects\TestProject1\wxpy.pkl"可以直接设置pkl缓存的位置
-#但是你也可以直接用cache_path= True来执行
+#但是你也可以直接用cache_path=True来执行
 
 message = input('请输入要发送的微信信息：')
 #此次将发送全部好友
