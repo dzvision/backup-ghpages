@@ -127,7 +127,7 @@ print 'Hello, World!'
 ### 图片
 
 ```
-![本站favicon](/favicon.ico)
+![本站favicon](/blog/favicon.ico)
 
 或：
 ![图片示例]({{ site.url }}/images/wiki/example.jpg)
