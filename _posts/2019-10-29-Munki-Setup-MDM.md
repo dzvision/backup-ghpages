@@ -21,7 +21,7 @@ macOS 可以通过MDM的方式进行管理，再加上注册Apple School Manager
 自macOS 10.14之后, 用户无需macOS Server来部署Munki.下面我来演示一下。安装步骤  
 去GitHub下载[Munki](https://github.com/munki/munki)
 在安装里，可以选择自定义安装，并且取消安装Managed Software Center
-![Munki Install Step 1](blog/images/posts/2019/munki1.png)
+![Munki Install Step 1](/blog/images/posts/2019/munki1.png)
 
 
 
