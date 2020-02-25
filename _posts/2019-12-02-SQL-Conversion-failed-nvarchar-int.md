@@ -20,7 +20,7 @@ Conversion failed when converting the nvarchar value 'abcdef' to data type int.
 
 例子
 | HEADER1 | Column | HEADER3 | HEADER4 |
-| ------- | :------ | :-----: | ------: |
+| ------- | --- | ------- | ------- |
 | content | abc | content | content |
 | content | bbc | content | content |
 | content | 123 | content | content |

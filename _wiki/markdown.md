@@ -134,7 +134,7 @@ print 'Hello, World!'
 
 ```
 
-![本站favicon](/favicon.ico)
+![本站favicon](/blog/favicon.ico)
 
 ### 锚点
 
