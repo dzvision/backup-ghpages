@@ -91,3 +91,27 @@ default-site
 ### 把Apache默认网页位置修改到SD卡
 暂无解决方案
 
+## 代替方案KSWEB和谐版
+
+### KSWEB和谐版下载地址
+
+### ngrok sunny内网穿透
+注册sunny的ngrok并生成clientid.
+然后下载sunny的ngrok的python版本
+通过
+```
+pkg install python
+```
+安装
+具体安装步骤可以查看
+http://www.ngrok.cc/_book/start/ngrok_android.html  
+
+但是我后来发现需要root才可以运行python
+于是在termux里面运行apt install tsu
+通过tsu命令得到root
+最后我发现，由于这个免费服务器是海外的，IP被封了。  
+用不了。（测试，打开VPN后可以用，但是这等于没用。）
+
+暂无解决方案
+
+
