@@ -220,5 +220,100 @@ marker.on('click',function(e){
 ```  
 但是出于学习如何实现信息窗体打开功能，我就暂时不直接用了。
 
+经过长期探索
+结合默认样式信息窗体与鼠标点击，我还是找到了如何实现最基本的功能：
+```
+<script type="text/javascript">
+  window.init = function(){
 
+  var map = new AMap.Map('container-AMap', {
+	  resizeEnable: true, //是否监控地图容器尺寸变化
+	  mapStyle: 'amap://styles/whitesmoke',
+      center:[116.481181, 39.989792],
+      zoom:15
+  });
+  
+
+var marker = new AMap.Marker({
+    position: new AMap.LngLat(116.481181, 39.989792),   // 经纬度对象，也可以是经纬度构成的一维数组[119.920486,30.245285]
+    title: '方恒国际酒店'
+  });
+  //==================异步加载1个插件==================
+  AMap.plugin('AMap.ToolBar',function(){//异步加载插件
+        var toolbar = new AMap.ToolBar();
+        map.addControl(toolbar);
+    });
+  	
+// 将创建的点标记添加到已有的地图实例：
+map.add(marker);
+marker.on('click',openInfo) //鼠标点击标记事件 - 打开信息窗体
+ /*=======================上面的原文是marker.on('click', function(e){ 后面一堆=========================*/
+
+/*================================================*/
+    //在指定位置打开信息窗体
+    function openInfo() {
+        //构建信息窗体中显示的内容
+        var info = [];
+        info.push("<div class='input-card content-window-card'><div><img style=\"float:left;\" src=\" https://webapi.amap.com/images/autonavi.png \"/></div> ");
+        info.push("<div style=\"padding:7px 0px 0px 0px;\"><h4>高德软件</h4>");
+        info.push("<p class='input-item'>地址 :北京市朝阳区望京阜荣街10号首开广场4层</p></div></div>");
+		info.push("<p class='input-item'>点击此处使用高德地图导航</p></div></div>");
+
+        infoWindow = new AMap.InfoWindow({
+            content: info.join("")  //使用默认信息窗体框样式，显示信息内容
+        });
+
+        infoWindow.open(map, marker.getPosition()); //原文是open(map, map.getCenter());
+    }
+/*================================================*/	  
+}
+</script> 
+```
+
+## 10. 信息窗体内容添加跳转到高德地图导航
+根据markerOnAMAP，我们可以得到HTTPS的参数
+```
+https://gaode.com/regeo?lng=116.481181&lat=39.989792&name=你想要的标题
+```
+只需要将这个参数以链接的形式显示到默认的信息窗体内容即可完成。
+```
+info.push("<p class='input-item'><a href=\"https://gaode.com/regeo?lng=116.481181&lat=39.989792&name=你想要的标题\">点击此处使用高德地图导航</a></p></div></div>");
+```
+唯一需要注意的是我们需要在"的开始之前添加\ 例如\"  
+然后在结束之前添加\, 例如"\  
+  
+SearchOnAMap这类调起，即使使用手机端，同样只是打开浏览器，无论是直接的HTTPS还是OnAMap都无法实现直接打开App。
+
+## 11. 实现窗口信息的位置偏移
+从说明文档中我们知道是在infoWindow = new AMap.InfoWindow的里面添加offset: new AMap.Pixel(0, -20)
+也就是
+```
+/*================================================*/
+    function openInfo() {
+        var info = [];
+        info.push("<div class='input-card content-window-card'><div><img style=\"float:left;\" src=\" https://webapi.amap.com/images/autonavi.png \"/></div> ");
+        ... ...
+		/*####################修改偏移量准备位置####################*/
+        infoWindow = new AMap.InfoWindow({
+            content: info.join(""),  //使用默认信息窗体框样式，显示信息内容
+			offset: new AMap.Pixel(0, -20), //添加信息窗体的偏移量 
+... ...
+/*================================================*/	 
+```
+需要注意的是别忘了逗号。
+content: info.join("")与offset... ...要有逗号。
+否则这个偏移就出不来了。
+
+## 12. 默认信息窗体的扩展
+在认真实践的时候发现，我们的info.push即使加多一行，实际上也不显示。
+所以，我们需要Size这个参数来定义。
+```
+        infoWindow = new AMap.InfoWindow({
+            content: info.join(""), //使用默认信息窗体框样式，显示信息内容 
+			//可以是content:"aaa"//信息窗体的内容 因为我们定义了info =[], 所以就是info.join("")
+			offset: new AMap.Pixel(0, -20), //添加信息窗体的偏移量 
+			size: new AMap.Size(300,180) //定义信息窗体的长宽
+        });
+```
+做完这个，你就可以根据实际情况，添加info.push的内容了。
 
