@@ -15,7 +15,7 @@ keywords: 网页服务器
 ## 序
 使用Android手机实现Web服务器，其中包含如何安装Apache HTTP Server以及如何使用Ngrok(Sunny)的服务反向代理。
 
-## 1. 安装Apache HTTP Server
+##  方法一的尝试：1. 安装Apache HTTP Server
 安装Apache HTTP Server前，需要先安装Termux
 先从Google Play下载。
 
@@ -95,6 +95,7 @@ default-site
 
 ### KSWEB和谐版下载地址
 
+
 ### ngrok sunny内网穿透
 注册sunny的ngrok并生成clientid.
 然后下载sunny的ngrok的python版本
@@ -112,6 +113,21 @@ http://www.ngrok.cc/_book/start/ngrok_android.html
 最后我发现，由于这个免费服务器是海外的，IP被封了。  
 用不了。（测试，打开VPN后可以用，但是这等于没用。）
 
-暂无解决方案
+## 方法二 花生壳实现内网穿透
+因为ngrok内网穿透方案看过之后，类似的内网穿透方案例如frp,lanproxy等原理都相似。  
+都需要一台VPS运转，且若包含了免费VPS给你用的话，也是在海外，一样有带宽限制。  
+
+如果有VPS的话， 这个配置我还不如直接vps装面板，还能支持多个网站。  
+  
+所以，回归到花生壳也是必须只能这样。花生壳的免费服务器是上海的，不会担心IP封。 
+
+花生壳改变了很多，无法进行域名解析了，只能先用电脑端打开花生壳超过1个小时，耐心等待花生壳的DNS自动修改IP为新的IP。
+设置好各个端口之后，去DNS服务商设置CNAME为你的花生壳二级域名即可。  
+  
+需要注意的是，如果你采用了企业邮箱，你的CNAME就无法直接用@的形式，必须是www  
+不过，你也可以增加A解析到你CNAME的IP地址。  
+
+
+
 
 
