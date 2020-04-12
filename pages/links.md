@@ -8,7 +8,7 @@ menu: 链接
 permalink: /links/
 ---
 
-> God made relatives. Thank God we can choose our friends.
+> 我的信仰在空中飘扬：经国序民，正其制度。群之所为事无不成，众之所举业无不胜。
 
 {% for link in site.data.links %}
 * [{{ link.name }}]({{ link.url }})
