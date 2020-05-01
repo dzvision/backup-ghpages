@@ -84,3 +84,36 @@ while active == 1 :
             pass
     sleep(15)
 ```
+
+## 杀死进程60秒后自动结束版
+如果是无限循环的话，让进程一直存在似乎不太好，于是就想到自动结束进程的方法。   
+来源：[stackoverflow](https://stackoverflow.com/questions/20775624/end-python-code-after-60-seconds)
+```python
+import os
+import time
+import psutil
+from datetime import datetime
+from threading import Timer
+
+
+
+def exitfunc():
+    print("Exit Time", datetime.now())
+    os._exit(0)
+
+Timer(60, exitfunc).start() # exit in 60 seconds
+
+while True: # infinite loop, replace it with your code that you want to interrupt
+    print("Current Time", datetime.now())
+    time.sleep(1)
+    process_to_kill = {'AdobeARM.exe', 'acrotray.exe','QQProtect.exe','pcas.exe','wwbizsrv.exe','dy_service.exe'}
+    #List里面无法直接变成小写，具体可以Google
+    for proc in psutil.process_iter():
+          #进程名字清单
+        try:
+            if proc.name() in process_to_kill:
+                proc.kill()
+                print('Successfully kill those apps.')
+        except psutil.NoSuchProcess:
+            pass
+```			
