@@ -136,6 +136,15 @@ cscript ospp.vbs /dstatus
 
 激活完成。
 
+### 激活服务器列表
+```
+kms.v0v.bid
+kms.03k.org
+kms.moeclub.org
+########高校KMS#######
+
+```
+
 ### 参考文献
 1. [imeiji GitHub](https://imeiji.github.io/2018/02/08/%E5%88%A9%E7%94%A8vlmcsd%E6%90%AD%E5%BB%BAKMS%E6%BF%80%E6%B4%BB%E6%9C%8D%E5%8A%A1%E5%99%A8/)  
 2. [lvmoo](https://wwww.lvmoo.com/517.love)
