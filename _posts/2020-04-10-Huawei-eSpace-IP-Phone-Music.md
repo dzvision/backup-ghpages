@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 华为eSpace 7910如何添加铃声
-categories: MacOS
+categories: 其他
 description: 
-keywords: MacOS
+keywords: 其他
 ---
 
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 如何做一个Email模板HTML并导入进邮箱内
-categories: MacOS
+categories: HTML
 description: 
-keywords: MacOS
+keywords: HTML, e-mail
 ---
 
 

@@ -17,9 +17,9 @@ keywords: Web, Jekyll, GitHub, Blog, 静态网页
 ## 1. 下载Jekyll for Windows并安装
 
 ### 下载Jekyll
-Jekyll官网：https://jekyllrb.com/docs/windows/
+Jekyll官网：<https://jekyllrb.com/docs/windows/>
 
-Jekyll on Windows: https://rubyinstaller.org/
+Jekyll on Windows: <https://rubyinstaller.org/>
 
 提示：Jekyll Windows安装器已经包含RubyGems，所以无需再次下载。
 
@@ -149,6 +149,12 @@ bundle install
 bundle update --bundler
 ```
 
+已有项目及已配置好Jekyll Ruby的话，直接修改地址即可
+```
+C:\Users\ABC>d:
+d:\>cd d:\blog
+bundle exec jekyll serve
+```
 
 
 ## 6. 修改侧边栏
