@@ -142,7 +142,15 @@ kms.v0v.bid
 kms.03k.org
 kms.moeclub.org
 ########高校KMS#######
-
+南安普顿大学：kms.soton.ac.uk
+苏州大学：kms.suda.edu.cn
+中国科学技术大学：kms.ustc.edu.cn
+南京航空航天大学：kms.nuaa.edu.cn
+中山大学：kms.sysu.edu.cn  
+上海交通大学：kms.sjtu.edu.cn
+武汉理工大学：kms.whut.edu.cn
+华北电力大学：202.204.74.218
+华南理工大学：act.msweb.scut.edu.cn
 ```
 
 ### 参考文献
