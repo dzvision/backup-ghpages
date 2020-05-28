@@ -2,8 +2,8 @@
 layout: post
 title: 使用Nginx免费版与Keepalived实现高可用性High Availablity方案
 categories: 网页服务器
-description: 搭建Windows/Office KMS服务器
-keywords: Windows,网页服务器
+description: 搭建负载均衡服务器
+keywords: 服务器
 ---
 
 # 使用Nginx免费版与Keepalived实现高可用性High Availablity方案

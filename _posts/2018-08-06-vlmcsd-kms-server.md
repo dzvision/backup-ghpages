@@ -119,6 +119,20 @@ slmgr.vbs -ato
 激活完成。  
 可通过slmgr.vbs -dlv查询激活状态。  
 
+### Windows激活遇到问题
+slmgr.vbs 无法激活：
+On a computer running Microsoft Windows non-core edition, run 'slui.exe 0x2a 0xC0000022' to display the error text.
+
+这是由于采用WinPE内的Windows安装器安装导致的文件权限问题。
+请直接到C:\Windows\System32\spp\store文件夹，在属性-->安全里面查看“组或用户名”的文件权限，然后手动添加NT SERVICE\sppsvc 并赋予了完全控制的权限即可。
+
+### Windows 10 非激活密钥
+Generic Product Keys for Windows 10
+这个密钥可以升级系统，或在有数字许可证的情况下重新联网激活系统。
+Windows 10 Pro	VK7JG-NPHTM-C97JM-9MPGT-3V66T
+Windows 10 Enterprise	XGVPP-NMH47-7TTHJ-W3FW7-8HV2C
+更多详情可[查看](https://www.winhelponline.com/blog/windows-10-generic-products-keys-list/)
+
 
 ### 激活Office
 支持Office 2010/2013/2016
@@ -153,6 +167,6 @@ kms.moeclub.org
 华南理工大学：act.msweb.scut.edu.cn
 ```
 
-### 参考文献
+## 参考文献
 1. [imeiji GitHub](https://imeiji.github.io/2018/02/08/%E5%88%A9%E7%94%A8vlmcsd%E6%90%AD%E5%BB%BAKMS%E6%BF%80%E6%B4%BB%E6%9C%8D%E5%8A%A1%E5%99%A8/)  
 2. [lvmoo](https://wwww.lvmoo.com/517.love)
