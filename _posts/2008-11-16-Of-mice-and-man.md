@@ -24,5 +24,7 @@ OR http://www.cliffsnotes.com/literature/o/of-mice-and-men/of-mice-and-men-at-a-
 大家自重！不要举报说版权啊之类的，不要过河拆桥！！我的网盘被删了好几遍了！！！！！！！  
 麦库分享开始坑爹了。。。 。。。
 
-新地址：华为网盘  
+新地址：[人鼠之间中文版(轻微压缩).pdf](https://github.com/dzvision/dzvision.github.io/files/4963907/default.pdf)
+来源：[GitHub Issue](https://github.com/dzvision/dzvision.github.io/issues/19)
+
 如果下载出现问题，可以回复
