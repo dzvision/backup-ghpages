@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我在岛上，你在船里
+title: 默鱼
 categories: 随笔
 description: 随笔日志
 keywords: 情感
