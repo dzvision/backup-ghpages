@@ -31,7 +31,7 @@ SELECT * FROM
   ) AS BaseTable
   PIVOT( 
 	AVG(Mark2)
-	FOR [SubjectName] in ([Mathematics],[Chinese],[English],[Science],])
+	FOR [SubjectName] in ([Mathematics],[Chinese],[English],[Science])
 ) AS StudentMarksMerge
 ```
 使用PIVOT需要注意的是，必须把其他列中同一学生不同信息列隐藏才可以。  

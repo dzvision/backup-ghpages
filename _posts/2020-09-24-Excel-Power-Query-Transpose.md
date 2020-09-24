@@ -16,11 +16,12 @@ keywords: Excel
 
 ## Excel中使用Power Query实现
 
-Step 1: 首先，我们先进入Data --> From Table/Range 选好区域回车。
-![Step1](/blog/images/posts/2020/20200924_Excel_Transpose_Step1)
+Step 1: 首先，我们先进入Data --> From Table/Range 选好区域回车。 
+
+![Step1](/blog/images/posts/2020/20200924_Excel_Transpose_Step1.png)  
 
 Step 2:  
-![Step2](/blog/images/posts/2020/20200924_Excel_Transpose_Step2)
+![Step2](/blog/images/posts/2020/20200924_Excel_Transpose_Step2.png)  
 
 然后我们选中把行变成列的那一整列，再去Transform --> Pivot Column
 
