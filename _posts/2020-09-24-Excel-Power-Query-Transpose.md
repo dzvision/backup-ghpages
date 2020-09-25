@@ -29,10 +29,10 @@ Step 3:
 Values Column选择成绩，而Advanced Options无需看，无论是SUM还是AVG结果都一样的。
 
 ## Excel中使用Pivot Table去做
-（个人觉得这个不太好用，因为只能有一列是原来的那一列，另外一列就是从行变成列的）
+（个人觉得这个不太好用，因为只能有一列是原来的那一列，另外一列就是从行变成列的）  
 有的时候使用Power Query会出现不成功的情况，例如：  
 ![Problem](/blog/images/posts/2020/20200924_Excel_Transpose_PowerQueryProblem.png)   
-
+所以，在这个时候使用Pivot Table就合适了。  
   
 Step 1: 从Insert找到Pivot Table即可。  
 ![Step1](/blog/images/posts/2020/20200924_Excel_Transpose_PivotTable1.png)   
