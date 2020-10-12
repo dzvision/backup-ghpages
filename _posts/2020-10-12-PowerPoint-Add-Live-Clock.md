@@ -72,5 +72,13 @@ End Sub
 Step 8: 关闭VBA窗口，点击文本框，然后找到Insert-->Action并将Action Setting内的Mouse Click Tab选择Run macro并选择为StartClock
 ![Step8](/blog/images/posts/2020/20201012_AddLiveClock-step8.png) 
 
-Step 9: ，点击时间即可激活实时时间
-![Step9](/blog/images/posts/2020/20201012_AddLiveClock-step9.png) 
+Step 9: 记得另存为启用宏的PowerPoint PPTM格式
+![Step9](/blog/images/posts/2020/20201012_AddLiveClock-step9.png)   
+
+Step 10: 点击时间即可激活实时时间  
+  
+  
+## 其他资料
+[1. Microsoft时间代码参考](https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications)
+[2. 文件样本](https://github.com/dzvision/blog/raw/master/documents/Example_Exam_Clock.pptm)
+
