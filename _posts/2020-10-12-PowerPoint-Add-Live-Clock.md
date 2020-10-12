@@ -68,3 +68,9 @@ Sub OnSlideShowTerminate()
 clock = False
 End Sub
 ```
+  
+Step 8: 关闭VBA窗口，点击文本框，然后找到Insert-->Action并将Action Setting内的Mouse Click Tab选择Run macro并选择为StartClock
+![Step8](/blog/images/posts/2020/20201012_AddLiveClock-step8.png) 
+
+Step 9: ，点击时间即可激活实时时间
+![Step9](/blog/images/posts/2020/20201012_AddLiveClock-step9.png) 
