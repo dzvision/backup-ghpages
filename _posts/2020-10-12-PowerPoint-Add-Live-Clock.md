@@ -6,7 +6,7 @@ description: PowerPoint VBA
 keywords: PowerPoint
 ---
 
-在工作中，PowerPoint做实时时间可以通过Add-in也可以通过VB来做，下面我用VB来做
+在工作中，PowerPoint做实时时间可以通过Add-in也可以通过VB来做，下面我用VB来做，本文最后还有做好的模板文件。
 
 
 **目录**
@@ -79,6 +79,6 @@ Step 10: 点击时间即可激活实时时间
   
   
 ## 其他资料
-[1. Microsoft时间代码参考](https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications)
-[2. 文件样本](https://github.com/dzvision/blog/raw/master/documents/Example_Exam_Clock.pptm)
+[1. Microsoft时间代码参考](https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications)  
+[2. 文件样本下载](https://github.com/dzvision/blog/raw/master/documents/Example_Exam_Clock.pptm)  
 
