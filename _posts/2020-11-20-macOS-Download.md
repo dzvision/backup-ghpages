@@ -27,9 +27,14 @@ sudo softwareupdate --fetch-full-installer
 
 ## 通过installinstallmacos.py下载
 [GitHub](https://github.com/munki/macadmin-scripts)
+```
+./installinstallmacos.py --compress
+
+# 使用compress可以直接变成DMG格式，不用的话是sparseimage格式。
+```
 
 ## 采用进阶版scriptingosx制作的macOS PKG
-[ScriptingOSX](https://scriptingosx.com/2020/11/deploying-the-big-sur-installer-application/)
+[ScriptingOSX](https://scriptingosx.com/2020/11/deploying-the-big-sur-installer-application/)  
 [GitHub](https://github.com/scriptingosx/fetch-installer-pkg)  
 
 以前，我们通过pkgbuild的方式可以直接打包Install macOS App，但是macOS Big Sur是无法通过这个方式实现的，ScriptingOSX里面有具体解释。所以PKG安装，可以直接采用fetch-installer-pkg的方式下载并保存为PKG格式。

@@ -21,6 +21,11 @@ Windows 英文版现在采用迅雷非会员的方式基本下载不了，基于
   
 该版本ISO包含Home/Pro/Education;不含企业版。
 
+这个是一个在线工具，可以下载变成ISO，但是如果你想直接下载ISO，也是可以的。  
+直接在Google Chrome按F12进入开发者模式，并在右侧上方Tab选择Network（网络），然后右侧下方默认是Console,换成Network conditions Tab。  
+
+在这里找到Network throttling下面的User Agent并选择Chrome - Chrome OS即可直接下载ISO。
+
 ## 企业版下载
 我们可以从Evaluation Center下载Windows 10企业版。   
 <https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise>   

@@ -97,6 +97,17 @@ vlmcs-Windows-x86.exe 是测试KMS Server是否能正常连接和使用。后面
 使用cmd打开vlmcsd-Windows-x86.exe即可。
 测试本地KMS是否运行，然后即可在局域网内，激活其他电脑。
 
+```
+c:\kms>vlmcsd-Windows-x64.exe
+
+## 本机验证
+c:\kms>vlmcs-Windows-x64.exe
+
+## 非本机验证
+c:\kms>vlmcs-Windows-x64.exe 172.29.14.20
+
+```
+
 因为我们关闭程序后，就停止运行了。所以我们也可以在本地电脑添加自启动服务项。  
 ```
 sc create KMSserver binPath= C:\Allthings\Tools\kms-server.exe start= auto
@@ -118,6 +129,7 @@ slmgr.vbs -skms 34.219.129.62
 slmgr.vbs -ato  
 激活完成。  
 可通过slmgr.vbs -dlv查询激活状态。  
+[Windows KMS密钥](https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys)  
 
 ### Windows激活遇到问题
 slmgr.vbs 无法激活：
@@ -157,6 +169,13 @@ kms.03k.org
 kms.moeclub.org
 ########高校KMS#######
 南安普顿大学：kms.soton.ac.uk
+华盛顿大学：mskms.cac.washington.edu
+佛罗里达州立大学：fsu-kms-01.fsu.edu
+圭尔夫大学: activate.cfs.uoguelph.ca
+国立交通大学：kmserv.nctu.edu.tw
+國立宜蘭大學：kms.niu.edu.tw
+實踐大學：kms.usc.edu.tw
+东吴大学：kms.scu.edu.tw
 苏州大学：kms.suda.edu.cn
 中国科学技术大学：kms.ustc.edu.cn
 南京航空航天大学：kms.nuaa.edu.cn
@@ -165,6 +184,17 @@ kms.moeclub.org
 武汉理工大学：kms.whut.edu.cn
 华北电力大学：202.204.74.218
 华南理工大学：act.msweb.scut.edu.cn
+北京大学：kms.pku.edu.cn
+清华大学：kms.cic.tsinghua.edu.cn
+复旦大学：mvls.fudan.edu.cn
+同济大学：kms.tongji.edu.cn
+上海财经大学：kms.shufe.edu.cn
+上海师范大学：mskms.shnu.edu.cn
+上海海事大学：kms.shmtu.edu.cn
+南京航空航天大学：kms.nuaa.edu.cn
+上海第二工业大学：kms.sspu.edu.cn
+中国科学技术大学：kms.ustc.edu.cn
+南京特殊教育师范学院：kms.njty.edu.cn
 ```
 
 ## 参考文献
