@@ -16,4 +16,6 @@ keywords: PDF
 
 ~~在线观看：http://www.docin.com/p-43876453.html~~
 
-更新下载链接：
+更新下载链接：[GitHub - PDF](https://github.com/dzvision/blog/blob/master/documents/Highschool-Textbooks/%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F-%E4%B8%AD%E6%96%87%E7%89%88.pdf)  
+[GitHub - TXT](https://github.com/dzvision/blog/blob/master/documents/Highschool-Textbooks/%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F-%E5%93%88%E7%8F%80%C2%B7%E6%9D%8E.txt)
+
