@@ -90,4 +90,43 @@ rm -v /Volumes/Macintosh\ HD/Users/[UserName]/Desktop/*
 ```
 添加-v你可以看到哪些文件被删除。
 
+## 权限问题
+
+默认权限是归root的，因为是在恢复模式新增文件夹（也就是system)。
+https://support.apple.com/en-hk/guide/mac-help/mchlp1038/mac
+在复制好文件夹之后，可能产生权限问题，这个可以通过Get Info / CMD + I 解锁后进入Sharing & Permissions将用户加进去
+
+如果是从恢复模式直接通过代码添加则
+```
+## 先将文件夹所有者更改为该用户
+sudo chown UserName -R path/to/directory 
+sudo chmod -R 755 path/to/directory 
+```
+
+644代表，用户可读可写，用户组可读，其他组可读。
+755代表，用户可读可写可执行，组可读可执行，其他可读可执行  
+你也可以通过以下方式:  
+
+```
+sudo chmod u=rw,g=r,o=r path/to/directory
+
+##或者 (755)
+sudo chmod a+rwx,g-w,o-w path/to/directory
+```
+[命令转换网站](https://chmodcommand.com/chmod-755/)
+
+下面是ls -l的解释：
+
+```
+-rw-r--r-- 12 linuxize users 12.0K Apr  8 20:51 filename.txt
+|[-][-][-]-   [------] [---]
+| |  |  | |      |       |
+| |  |  | |      |       +-----------> 7. Group
+| |  |  | |      +-------------------> 6. Owner
+| |  |  | +--------------------------> 5. Alternate Access Method
+| |  |  +----------------------------> 4. Others Permissions
+| |  +-------------------------------> 3. Group Permissions
+| +----------------------------------> 2. Owner Permissions
++------------------------------------> 1. File Type (如果开头是d代表这个是个文件夹)
+```
 
