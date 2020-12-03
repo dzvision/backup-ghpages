@@ -36,8 +36,23 @@ Next rs
 End Sub
 ```
 
-Step 4: 按F5运行，或关闭VBA后，通过 Excel View -->Macros -->View Macros-->Run
+Step 4: 按F5运行，或关闭VBA后，通过 Excel View -->Macros -->View Macros-->Run  
 
+如果指定单元格没有数据怎么办？  
+我们可以添加一个条件进去即可。
+```
+Sub RenameSheet()
+
+Dim rs As Worksheet
+
+For Each rs In Sheets
+    If rs.Range("F3").Value <> "" Then
+        rs.Name = rs.Range("F3")
+    End If
+Next rs
+
+End Sub
+```
 
 ## Excel中通过VBA批量修改特定位置颜色
 ### 单个无条件修改全部工作表
@@ -67,13 +82,43 @@ For Each rngCell In Range("A6:A19")
 	'If Everything in A6-A19 The length of the cell value is not zero, change backgroud color. Otherwise, do nothing
  End If
 Next rngCell
+```  
+
+### 有条件修改全部工作表
 ```
+修改全部工作表的代码为
+Dim ws As Worksheet
+For Each ws In Sheets
+###在中间插入你想要全部工作表都修改的代码
+Next ws
+========================================
+Sub Fill_Cell_Condition()
+
+Dim wsFill As Worksheet
+Dim i
+
+For Each wsFill In Sheets 
+    For i = 8 To 20
+        If wsFill.Cells(i, 1).Value <> "" Then
+		'当A8-A20里不是没有值，则着色
+            wsFill.Cells(i, 1).Interior.Color = RGB(155, 30, 153)
+        End If
+    Next
+
+Next wsFill
+
+End Sub
+
+
+```
+
+
 
 
 
 ## 将每个工作表导出到单独Excel文件 
 
-Step 1: 在Termianl选择pip install组件
+Step 1: 在Termianl选择pip install组件pypiwin32
 ```
 pip install pypiwin32
 ```
