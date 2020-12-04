@@ -15,7 +15,7 @@ keywords: Python, Wechat
 
 ## 序
 使用Python进行微信网页版模拟早已不是秘密，甚至可以使用鼠标模拟的方式，对PC版进行模拟。  
-[WeTool免费版](https://www.wxb.com/wetool)，能直接查看全部好友是否有人删除了你，并且不会发送信息给朋友，使用这个可能比Python更合适一些。  
+~~[WeTool免费版](https://www.wxb.com/wetool)，能直接查看全部好友是否有人删除了你，并且不会发送信息给朋友，使用这个可能比Python更合适一些。~~  
 另外[句子秒回](https://wechat.botorange.com/)也是一个不错的工具，他更多聚焦在CRM上面。
 
 下面，我们一起来探究一下如何进行群发。
@@ -24,7 +24,7 @@ keywords: Python, Wechat
 Python的安装在这里并不想多少，目前网络上的教程都是正确的。
 需要指出的是，使用Python进行群发，由于编码问题，可能建议不要使用原装编译器。  
 否则在运行的时候可能出错。
-好像据说安装了pystorm也可以,但是我并没有测试，我是使用PyChram来编译运行的。
+好像据说安装了pystorm也可以,但是我并没有测试，我是使用PyChram来编译运行的。  
 下载地址：https://www.jetbrains.com/pycharm/
 
 

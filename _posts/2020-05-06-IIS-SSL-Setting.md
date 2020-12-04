@@ -28,7 +28,7 @@ keywords: Windows,网页服务器
 正确的做法是下载插件。
 
 ### 2.1 下载并安装URL Rewrite插件
-下载地址: <https://www.iis.net/downloads/microsoft/url-rewrite>
+下载地址: <https://www.iis.net/downloads/microsoft/url-rewrite>  
 等待下载并安装好之后，需要退出一下IIS。因为这个时候IIS Manager里面URL Rewrite还没显示出来。
 我们需要设置Web Config去修改。
 
@@ -93,5 +93,6 @@ keywords: Windows,网页服务器
 
 
 ## 参考文献
-参考文献1. [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9953/38/iis-redirect-http-to-https)
+参考文献1. [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9953/38/iis-redirect-http-to-https)  
+
 参考文献2. [Grid Scale](https://gridscale.io/en/community/tutorials/iis-redirect-http-to-https-windows/)
