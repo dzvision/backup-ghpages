@@ -117,3 +117,10 @@ while True: # infinite loop, replace it with your code that you want to interrup
         except psutil.NoSuchProcess:
             pass
 ```			
+  
+## py文件改为exe
+<https://pypi.org/project/auto-py-to-exe/>
+```
+pip install auto-py-to-exe
+
+```
