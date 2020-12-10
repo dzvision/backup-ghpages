@@ -3,7 +3,7 @@ layout: post
 title: 通过DISM清理组件储存文件
 categories: Windows
 description: 
-keywords:Windows
+keywords: Windows
 ---
 
 我们知道WinSxS是一个在C盘无法删除的重要系统文件，那么我们如何给他瘦身呢？
