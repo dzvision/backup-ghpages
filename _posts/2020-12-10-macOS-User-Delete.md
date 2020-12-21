@@ -32,6 +32,12 @@ sudo sysadminctl -adminUser FirstCreateUserName -adminPassword PASSWORD -secureT
 >>2020-07-21 14:15:34.072 sysadminctl[527:5170] - Done!
 ```
 
+## 重置密码
+无需进入恢复模式
+```
+sudo passwd UserName
+```
+
 如果出现如下错误：
 ```
 sysadminctl[1529:37416] setSecureTokenAuthorizationEnabled error Error Domain=com.apple.OpenDirectory Code=5101 "Authentication server refused operation because the current credentials are not authorized for the requested operation." UserInfo={NSLocalizedDescription=Authentication server refused operation because the current credentials are not authorized for the requested operation., NSLocalizedFailureReason=Authentication server refused operation because the current credentials are not authorized for the requested operation.}

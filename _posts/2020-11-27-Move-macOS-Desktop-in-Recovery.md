@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在恢复模式中移动Desktop内文件到Documents内
+title: macOS在恢复模式中移动Desktop内文件到Documents内
 categories: macOS
 description: 
 keywords: macOS
@@ -92,9 +92,9 @@ rm -v /Volumes/Macintosh\ HD/Users/[UserName]/Desktop/*
 
 ## 权限问题
 
-默认权限是归root的，因为是在恢复模式新增文件夹（也就是system)。
-https://support.apple.com/en-hk/guide/mac-help/mchlp1038/mac
-在复制好文件夹之后，可能产生权限问题，这个可以通过Get Info / CMD + I 解锁后进入Sharing & Permissions将用户加进去
+默认权限是归root的，因为是在恢复模式新增文件夹（也就是system)。  
+<https://support.apple.com/en-hk/guide/mac-help/mchlp1038/mac>  
+在复制好文件夹之后，可能产生权限问题，这个可以通过Get Info / CMD + I 解锁后进入Sharing & Permissions将用户加进去  
 
 如果是从恢复模式直接通过代码添加则
 ```
@@ -102,7 +102,7 @@ https://support.apple.com/en-hk/guide/mac-help/mchlp1038/mac
 sudo chown UserName -R path/to/directory 
 sudo chmod -R 755 path/to/directory 
 ```
-
+  
 644代表，用户可读可写，用户组可读，其他组可读。
 755代表，用户可读可写可执行，组可读可执行，其他可读可执行  
 你也可以通过以下方式:  
@@ -114,7 +114,7 @@ sudo chmod u=rw,g=r,o=r path/to/directory
 sudo chmod a+rwx,g-w,o-w path/to/directory
 ```
 [命令转换网站](https://chmodcommand.com/chmod-755/)
-
+  
 下面是ls -l的解释：
 
 ```
