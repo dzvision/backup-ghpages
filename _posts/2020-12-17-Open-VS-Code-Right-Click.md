@@ -6,7 +6,7 @@ description:
 keywords: Windows
 ---
 
-Windows10如何添加自定义右键菜单呢？例如我想把VS Code放到右键菜单，实现右键单文件，可以使用vscode打开，右键文件夹，可以使用vscode打开，右键北京空白处，可以使用vscode打开。
+Windows10如何添加自定义右键菜单呢？例如我想把VS Code放到右键菜单，实现右键单文件，可以使用vscode打开，右键文件夹，可以使用vscode打开，右键背景空白处，可以使用vscode打开。
 
 **目录**
 
@@ -45,8 +45,8 @@ Windows Registry Editor Version 5.00
 [参考链接1：](https://blog.csdn.net/GreekMrzzJ/article/details/82194913) 
 
 ## Step 2 替换文件位置
-确认你的文件位置，并修改。
-D:\A\B\C.exe要变成D:\\A\\B\\C.exe
+确认你的文件位置，并修改。  
+`D:\A\B\C.exe要变成D:\\A\\B\\C.exe`
 
 
 

@@ -72,5 +72,11 @@ slmgr -ato
 该问题直接在命令行输入slui.exe，在弹出的激活界面中输入GLVK的密钥即可。  
 
 -------------
-在其他类型出现该问题，是直接到达这个文件夹，并确认sppsvc是否具有全部权限。
-（例如Services Protection无法启用）
+在其他类型出现该问题，是直接到达这个文件夹，并确认sppsvc是否具有全部权限。  （例如Services Protection无法启用或没有权限打开这个文件夹）
+即：
+要求Software Protection服务（也就是sppsvc.exe）可以正常操作/system32/app/store文件夹，从而服务正常启动，激活成功。如果权限列表中没有sppsvc的，从而software protection服务无法对store文件夹进行操作，也就出现无法启动的错误，激活失败。
+
+在store文件夹为sppsvc服务增加权限:
+store文件夹右键---属性---安全---组或用户名
+点击编辑---添加---输入对象名称来选择， 输入： NT SERVICE\sppsvc
+确定之后，赋予sppsvc完全控制的权限。这样software protection服务就能正常启动，激活成功。

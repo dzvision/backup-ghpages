@@ -1,18 +1,15 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 一个注重企业安全，实现符合审计要求的IT合规化的小透明
+keywords: dzvision
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我的信仰在空中飘扬：经国序民，正其制度。群之所为事无不成，众之所举业无不胜。  
 
-仰慕「优雅编码的艺术」。
-
-坚信熟能生巧，努力改变人生。
 
 ## 联系
 

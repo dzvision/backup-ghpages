@@ -19,7 +19,7 @@ mathjax: true
 语法规范是空格+空格+回车换行  
 
 ### 超链接
-
+**方法一：**
 ```
 [FreeBuf](http://www.freebuf.com/)
 
@@ -29,6 +29,22 @@ mathjax: true
 [FreeBuf](http://www.freebuf.com/)
 
 <http://www.freebuf.com/>
+  
+**方法二：**
+ ```
+Some text with [a link][1] and
+another [link][2].
+
+[1]: http://example.com/ "Title"
+[2]: http://example.org/ "Title"
+The reference section can be anywhere in the document
+ ```
+Some text with [a link][1] and
+another [link][2].
+
+[1]: http://example.com/ "Title"
+[2]: http://example.org/ "Title"
+
 
 ### 列表
 
@@ -109,20 +125,27 @@ Tips: `#` 与标题中间要加空格。
 3. -----: 表示右对齐
 
 ### 代码块
-代码实现方式是
-键盘的~键3次 （不需要按Shift）
+代码实现方式是键盘的~键3次 （不需要按Shift）
+
+~~~python(No Shift)   
+print 'Hello, World!'  
+~~~(No Shift)
+
 
 ```python
 print 'Hello, World!'
 ```
+      
+你也可以通过键盘的~键一次实现不需要高亮的代码。
 
-1. list item1
+### 引用
+```
+> This is Quote text
+>>  This is Quoted quote. 
+```  
+> This is Quote text
+>>  This is Quoted quote.
 
-2. list item2
-
-   ```python
-   print 'hello'
-   ```
 
 ### 图片
 
@@ -152,7 +175,17 @@ print 'Hello, World!'
 
 ### Footnotes
 
+```
 This is a text with footnote[^1].
+
+[^1]: Here is the footnote 1 definition.
+上一行会出现在页尾
+```
+
+This is a text with footnote[^1].
+解释会出现在页尾
+
+[^1]: Here is the footnote 1 definition.
 
 ### mermaid
 
@@ -193,4 +226,5 @@ When $$(a \ne 0)$$, there are two solutions to $$(ax^2 + bx + c = 0)$$ and they 
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-[^1]: Here is the footnote 1 definition.
+### 其他参考资料
+[WordPress Markdown Quick Reference](https://wordpress.com/support/markdown-quick-reference/)
