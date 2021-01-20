@@ -18,17 +18,17 @@ keywords: SQL
 
 | StudentID | Last_Name | First_Name | Gender | GradeLevel | Class | Pupil_Email	| Relationship |	Pupil_Parent_Email |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 5013 |	Wang |	Zack | M |	Grade 9 Senior |	SG9 B |	5013@example.com |	爸爸 |	aaa@qq.com |
-| 5013 |	Wang |	Zack |	M |	Grade 9 Senior |	SG9 B |	5013@example.com |	妈妈 |	bbb@qq.com |
-| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com |	爸爸	 | ccc@tt.com |
-| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com | 妈妈 | ddd@gg.com |
-| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com | 妈妈 |extra-email@gg.com |
-| 5017 |	Ying | 	Eason | 	F | 	Grade 9 Senior | 	SG9 A |	5017@example.com |	爸爸	| e@e.com | 
-| 5017 |	Ying | 	Eason | 	F | 	Grade 9 Senior | 	SG9 A |	5017@example.com |	爸爸	| e@e.com | 
-| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 爸爸	| f@f.com | 
-| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 妈妈 | g@g.com | 
-| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 妈妈 | 2@g.com |
-| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 妈妈 | 3@g.com |
+| 5013 |	Wang |	Zack | M |	Grade 9 Senior |	SG9 B |	5013@example.com |	爸爸 |	5013a@qq.com |
+| 5013 |	Wang |	Zack |	M |	Grade 9 Senior |	SG9 B |	5013@example.com |	妈妈 |	5013b@qq.com |
+| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com |	爸爸	 | 5014a@qq.com |
+| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com | 妈妈 | 5014b@qq.com |
+| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com | 妈妈 | 5014b@qq.com |
+| 5017 |	Ying | 	Eason | 	F | 	Grade 9 Senior | 	SG9 A |	5017@example.com |	爸爸	| 5017e@qq.com | 
+| 5017 |	Ying | 	Eason | 	F | 	Grade 9 Senior | 	SG9 A |	5017@example.com |	爸爸	| 5017e@qq.com | 
+| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 爸爸	| 5029a@qq.com | 
+| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 妈妈 | 5029b1@qq.com | 
+| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 妈妈 | 5029b2@qq.com |
+| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 妈妈 | 5029b3@qq.com |
 
 ## 解析
 如你所见，学号5014和5029的学生妈妈出现多次，而5017学生同样数据显示了2次。那么我们如何让其数据，也就是“妈妈”，只显示其中一个呢?
@@ -71,19 +71,19 @@ Group By StudentID
 
 | StudentID | Last_Name | First_Name | Gender | GradeLevel | Class | Pupil_Email	| Relationship |	Pupil_Parent_Email |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 5013 |	Wang |	Zack | M |	Grade 9 Senior |	SG9 B |	5013@example.com |	爸爸 |	aaa@qq.com |
+| 5013 |	Wang |	Zack | M |	Grade 9 Senior |	SG9 B |	5013@example.com |	爸爸 |	5013a@qq.com |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 5013 |	Wang |	Zack |	M |	Grade 9 Senior |	SG9 B |	5013@example.com |	妈妈 |	bbb@qq.com |
+| 5013 |	Wang |	Zack |	M |	Grade 9 Senior |	SG9 B |	5013@example.com |	妈妈 |	5013b@qq.com |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com |	爸爸	 | ccc@tt.com |
+| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com |	爸爸	 | 5014a@qq.com |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com | 妈妈 | ddd@gg.com |
+| 5014 |	Liu |	Aileen |	F |	Grade 2 Bilingual	 | BG2 D | 	5014@example.com | 妈妈 | 5014b@qq.com |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 5017 |	Ying | 	Eason | 	F | 	Grade 9 Senior | 	SG9 A |	5017@example.com |	爸爸	| e@e.com | 
+| 5017 |	Ying | 	Eason | 	F | 	Grade 9 Senior | 	SG9 A |	5017@example.com |	爸爸	| 5017e@qq.com | 
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 爸爸	| f@f.com | 
+| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 爸爸	| 5029a@qq.com | 
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 妈妈 | 2@g.com |
+| 5029	| Yan	| Yuki	| M	| Grade 3 Bilingual	| BG3 H	| 5029@example.com	| 妈妈 | 5029b1@qq.com |
 
 
 上面我们所有的工作已经完成了！如果我想要将该表的邮箱行列进行互换呢？  
@@ -192,7 +192,7 @@ Order By Last_Name
 结果如下：  
 
 | StudentID | Last_Name |	First_Name |	Gender |	GradeLevel |	Class |	Pupil_Email |	1 |	 2 |
-|5014|	Liu|	Aileen 	| F 	| Grade 2  Bilingual |	BG2 D	| 5014@example.com |	ccc@tt.com |	ddd@gg.com |
-|5013|	Wang|	Zack	|M|	Grade 9 Senior	|SG9 B |	5013@example.com |	aaa@qq.com |	bbb@qq.com|
-|5029|	Yan|	Yuki|	M|	Grade 3 Bilingual	|BG3 H	 | 5029@example.com |	f@f.com	| 2@g.com|
-|5017|	Ying|	Eason|	F	|Grade 9 Senior|	SG9 A | 5017@example.com |	e@e.com |	NULL|
+|5014|	Liu|	Aileen 	| F 	| Grade 2  Bilingual |	BG2 D	| 5014@example.com |	5014a@qq.com |	5014b@qq.com |
+|5013|	Wang|	Zack	|M|	Grade 9 Senior	|SG9 B |	5013@example.com |	5013a@qq.com |	5013b@qq.com |
+|5029|	Yan|	Yuki|	M|	Grade 3 Bilingual	|BG3 H	 | 5029@example.com |	5029a@qq.com	| 5029b1@qq.com |
+|5017|	Ying|	Eason|	F	|Grade 9 Senior|	SG9 A | 5017@example.com |	5017e@qq.com |	NULL |

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 如何让DMG转换为PKG做软件部署
-categories: MacOS
+categories: macOS
 description: 
-keywords: MacOS
+keywords: macOS
 ---
 
 
