@@ -7,14 +7,14 @@ keywords: 服务器
 ---
 
 
-
+我们项目最近在测试pihole dns, 所以想要安装Ubuntu Server测试，结果发现报错。
 
 **目录**
 
 * TOC
 {:toc}
 
-我们项目最近在测试pihole dns, 所以想要安装Ubuntu Server测试，结果发现报错
+
 
 ## 1.解决安装Ubuntu Server到最后一步报错
 安装Ubuntu Server到最后一步报错
@@ -27,6 +27,7 @@ Sorry, there was a problem.
 
 ## 2.Ubuntu Server 网卡配置
 [How to Configure Static IP Address on Ubuntu 18.04](https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-18-04/#:~:text=Configuring%20Static%20IP%20address%20on%20Ubuntu%20Desktop,-Setting%20up%20a&text=In%20the%20Activities%20screen%2C%20search,Click%20on%20the%20cog%20icon.&text=In%20%E2%80%9CIPV4%E2%80%9D%20Method%22%20section,IP%20address%2C%20Netmask%20and%20Gateway.)
+  
 自从17的某个版本之后，Ubuntu开始了使用netplan作为设置网卡的工具，这里面使用了YAML的语法。
 你可以采用如下方式查看目前的配置
 
@@ -51,6 +52,7 @@ ip link
 你也可以通过ip a 或者老方法ifconfig -a的方式查看。
 从这里我们知道我的网卡名字为ens3。
 lo是默认网卡的Loopback配置，无需修改。
+更多信息可以参考[Ubuntu Network Configuration](https://ubuntu.com/server/docs/network-configuration)的描述。
 
 
   
