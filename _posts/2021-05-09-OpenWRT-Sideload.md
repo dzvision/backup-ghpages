@@ -31,7 +31,7 @@ keywords: OpenWRT
 6. 配置SSID Wifi，使用Profile为“Oversea”
 
 ## OpenWRT配置
-[Example](https://zhuanlan.zhihu.com/p/112484256)
+[Zhihu Example](https://zhuanlan.zhihu.com/p/112484256)
 1. 只需要配置LAN口为静态地址，并设置为10.10.10.2
 2. IPv4 Gateway设置为10.10.10.1
 3. DNS设置为8.8.8.8+8.8.4.4
