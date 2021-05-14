@@ -157,7 +157,7 @@ bundle exec jekyll serve
 ```
 
 
-## 6. 修改侧边栏
+## 8. 修改侧边栏
 把主页中侧边栏的Repo修改成分类栏。
 粗暴法：直接把sidebar-popular-repo删除，并复制一个副本sidebar-categories-nav.html且重命名为sidebar-popular-repo。
 
@@ -165,9 +165,26 @@ bundle exec jekyll serve
 1. sidebar-categories-nav.html的分类不可以通过点击筛选文章。
 2. 修改为Tag样式
 
-## 7. Push到GitHub中
+## 9. Push到GitHub中
 手残党直接通过GitHub Windows Commit即可。
 
+## 2021年更新
+(1) 在2021年尝试使用本地预览的时候发现如下问题：
+D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/jekyll-3.9.0/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)  
+经查询[GitHub Issue 8523](https://github.com/jekyll/jekyll/issues/8523)已经提到，解决方法  
+```
+bundle add webrick
+```
+之后再
+
+```
+bundle exec jekyll serve
+```  
+
+(2) GitHub本身识别出underscore.js存在漏洞，我直接搜索最新版替换，发现对网站无影响。
+```
+https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd.min.js
+```  
 
 ## 小提示
 1. 直接在cmd输入d:更换盘符。输入cd d:\abc\def\更换文件夹  

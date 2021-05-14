@@ -44,3 +44,7 @@ https://cdn.jsdelivr.net/gh/exampleusername/examplerepo@1.0/assets/demo.css
 静态网页加速可以这样解决，那么如果我有视频，或者音频呢？放GitHub不太好。
 在这里，我选择了京东云OSS, 免费10GB的储存，并且很方便就直接用上了外链，这跟网盘的操作方式是一样的。
 
+## 6. 图床白嫖
+图床我以前是使用百度贴吧，通过发帖发布图片得到地址而免费白嫖的。不过目前最新方法是可以通过API的方式白嫖各大厂的图床。
+例子：<https://github.com/BlueSkyXN/KIENG-FigureBed>
+
