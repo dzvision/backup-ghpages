@@ -25,7 +25,7 @@ NodeJS其他额外组件不需要安装。
 npm i -g vercel
 ```
 
-本来我以为可以放到不在C盘，我直接用Pycharm新建环境，再到里面输入上面的代码。
+本来我以为可以不放在C盘，即：我直接用Pycharm新建环境，再到里面输入上面的代码。
 结果发现其实，都是安装到AppData里面 T_T
 
 
@@ -54,7 +54,7 @@ We sent an email to example@example.com. Please follow the steps provided inside
 Congratulations! You are now logged in. In order to deploy something, run `vercel`.
 ```
   
-### Vercel CLI上传具体设置
+### Vercel CLI上传网站文件
 
 ```
 (venv) D:\PycharmProjects\examplewebsite>vercel
